@@ -11,6 +11,7 @@
         </hardware>
       </xacro:if>
       <xacro:unless value="$(arg use_sim)">
+	<!-- todo: replace with actual hardware interface -->
         <hardware>
           <plugin>ros2_control_demo_hardware/RRBotSystemPositionOnlyHardware</plugin>
           <param name="example_param_hw_start_duration_sec">2.0</param>
