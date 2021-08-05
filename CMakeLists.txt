@@ -1,12 +1,10 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.5)
 
 project(franka_panda_description)
 
-find_package(catkin REQUIRED)
-
-catkin_package()
+find_package(ament_cmake REQUIRED)
 
 foreach(dir meshes robots)
    install(DIRECTORY ${dir}/
-      DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/${dir})
+      DESTINATION share/${dir})
 endforeach(dir)
