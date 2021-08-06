@@ -10,7 +10,7 @@
 
   <xacro:if value="$(arg load_gripper)">
     <xacro:include filename="$(find franka_panda_description)/robots/hand.xacro"/>
-    <xacro:hand ns="panda" rpy="0 0 ${-pi/4}" connected_to="panda_link8"/>
+    <xacro:hand ns="$(arg robot_name)" rpy="0 0 ${-pi/4}" connected_to="$(arg robot_name)_link8"/>
   </xacro:if>
 
   <xacro:if value="$(arg load_gazebo)">  
@@ -23,7 +23,7 @@
   </xacro:if>
 
   <xacro:unless value="$(arg load_gazebo)">  
-    <xacro:panda_arm />
+    <xacro:panda_arm arm_id="$(arg robot_name)" />
   </xacro:unless>
 
 </robot>

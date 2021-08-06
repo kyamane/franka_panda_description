@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!-- Franka Panda model with torque (effort) command controller -->
+
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="franka_panda_torque">
+  <xacro:arg name="use_sim" default="true" />
+  <xacro:arg name="use_gripper" default="true" />
+  <xacro:arg name="robot_name" default="panda" />
+  <xacro:arg name="load_gripper" default="$(arg use_gripper)" />
+
+  <!-- robot arm model file -->
+  <xacro:include filename="$(find franka_panda_description)/robots/panda_arm_hand.urdf.xacro" />
+  <!-- hardware interface file -->
+  <xacro:include filename="$(find franka_panda_description)/ros2_control/franka_panda_torque.ros2_control.xacro" />
+
+  <xacro:franka_panda_torque name="franka_panda_torque" prefix="$(arg robot_name)" use_gripper="$(arg use_gripper)" />
+
+</robot>

@@ -4,7 +4,9 @@ project(franka_panda_description)
 
 find_package(ament_cmake REQUIRED)
 
-foreach(dir meshes robots)
+foreach(dir meshes robots ros2_control)
    install(DIRECTORY ${dir}/
       DESTINATION share/${dir})
 endforeach(dir)
+
+ament_package()
