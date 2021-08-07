@@ -5,8 +5,13 @@ project(franka_panda_description)
 find_package(ament_cmake REQUIRED)
 
 foreach(dir meshes robots ros2_control)
-   install(DIRECTORY ${dir}/
-      DESTINATION share/${dir})
+  install(DIRECTORY ${dir}/
+    DESTINATION share/${PROJECT_NAME}/${dir})
 endforeach(dir)
+
+# udims::Chain::load() needs the meshes here
+install(DIRECTORY meshes
+  DESTINATION share
+)
 
 ament_package()
