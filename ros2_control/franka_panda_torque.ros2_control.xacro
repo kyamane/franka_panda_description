@@ -26,6 +26,7 @@
           <param name="max">87</param>
         </command_interface>
         <state_interface name="position"/>
+        <state_interface name="velocity"/>
       </joint>
       <joint name="panda_joint2">
         <command_interface name="effort">
@@ -33,6 +34,7 @@
           <param name="max">87</param>
         </command_interface>
         <state_interface name="position"/>
+        <state_interface name="velocity"/>
       </joint>
       <joint name="panda_joint3">
         <command_interface name="effort">
@@ -40,6 +42,7 @@
           <param name="max">87</param>
         </command_interface>
         <state_interface name="position"/>
+        <state_interface name="velocity"/>
       </joint>
       <joint name="panda_joint4">
         <command_interface name="effort">
@@ -47,6 +50,7 @@
           <param name="max">87</param>
         </command_interface>
         <state_interface name="position"/>
+        <state_interface name="velocity"/>
       </joint>
       <joint name="panda_joint5">
         <command_interface name="effort">
@@ -54,6 +58,7 @@
           <param name="max">12</param>
         </command_interface>
         <state_interface name="position"/>
+        <state_interface name="velocity"/>
       </joint>
       <joint name="panda_joint6">
         <command_interface name="effort">
@@ -61,6 +66,7 @@
           <param name="max">12</param>
         </command_interface>
         <state_interface name="position"/>
+        <state_interface name="velocity"/>
       </joint>
       <joint name="panda_joint7">
         <command_interface name="effort">
@@ -68,6 +74,7 @@
           <param name="max">12</param>
         </command_interface>
         <state_interface name="position"/>
+        <state_interface name="velocity"/>
       </joint>
       <xacro:if value="$(arg use_gripper)">
 	<joint name="panda_finger_joint1">
@@ -76,6 +83,7 @@
             <param name="max">20</param>
           </command_interface>
           <state_interface name="position"/>
+          <state_interface name="velocity"/>
 	</joint>
 	<joint name="panda_finger_joint2">
           <command_interface name="effort">
@@ -83,6 +91,7 @@
             <param name="max">20</param>
           </command_interface>
           <state_interface name="position"/>
+          <state_interface name="velocity"/>
 	</joint>
       </xacro:if>
     </ros2_control>
