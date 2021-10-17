@@ -25,7 +25,7 @@
       </visual>
       <collision>
         <geometry>
-          <mesh filename="package://${description_pkg}/meshes/collision/link0.stl"/>
+          <!-- <mesh filename="package://${description_pkg}/meshes/collision/link0.stl"/> -->
         </geometry>
       </collision>
       <xacro:unless value="${in_gazebo == 'false'}">
@@ -44,7 +44,7 @@
       </visual>
       <collision>
         <geometry>
-          <mesh filename="package://${description_pkg}/meshes/collision/link1.stl"/>
+          <!-- <mesh filename="package://${description_pkg}/meshes/collision/link1.stl"/> -->
         </geometry>
       </collision>
       <inertial>
@@ -70,7 +70,7 @@
       </visual>
       <collision>
         <geometry>
-          <mesh filename="package://${description_pkg}/meshes/collision/link2.stl"/>
+          <!-- <mesh filename="package://${description_pkg}/meshes/collision/link2.stl"/> -->
         </geometry>
       </collision>
       <inertial>
@@ -96,7 +96,7 @@
       </visual>
       <collision>
         <geometry>
-          <mesh filename="package://${description_pkg}/meshes/collision/link3.stl"/>
+          <!-- <mesh filename="package://${description_pkg}/meshes/collision/link3.stl"/> -->
         </geometry>
       </collision>
       <inertial>
@@ -122,7 +122,7 @@
       </visual>
       <collision>
         <geometry>
-          <mesh filename="package://${description_pkg}/meshes/collision/link4.stl"/>
+          <!-- <mesh filename="package://${description_pkg}/meshes/collision/link4.stl"/> -->
         </geometry>
       </collision>
       <inertial>
@@ -148,7 +148,7 @@
       </visual>
       <collision>
         <geometry>
-          <mesh filename="package://${description_pkg}/meshes/collision/link5.stl"/>
+          <!-- <mesh filename="package://${description_pkg}/meshes/collision/link5.stl"/> -->
         </geometry>
       </collision>
       <inertial>
@@ -174,7 +174,7 @@
       </visual>
       <collision>
         <geometry>
-          <mesh filename="package://${description_pkg}/meshes/collision/link6.stl"/>
+          <!-- <mesh filename="package://${description_pkg}/meshes/collision/link6.stl"/> -->
         </geometry>
       </collision>
       <inertial>
@@ -200,7 +200,7 @@
       </visual>
       <collision>
         <geometry>
-          <mesh filename="package://${description_pkg}/meshes/collision/link7.stl"/>
+          <!-- <mesh filename="package://${description_pkg}/meshes/collision/link7.stl"/> -->
         </geometry>
       </collision>
       <inertial>
